@@ -5,11 +5,14 @@ import (
 	"fmt"
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
+	"log"
 	"myGoWeb/goApiServer/models"
 	"myGoWeb/goApiServer/providers"
 	_ "myGoWeb/goApiServer/routers"
+	"os"
 	"time"
 	"go.uber.org/fx"
+	"github.com/labstack/echo"
 )
 
 func main() {
